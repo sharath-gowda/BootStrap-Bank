@@ -1,0 +1,32 @@
+.navbar-brand{
+    padding-left: 13px;
+    font-size: 2.2rem;
+}
+.balance{
+    padding-top: 10px;
+}
+.number{
+    padding-top:0px;
+}
+.deposit{
+background-color: #2a1a5e;
+    text-align: left;
+    padding:3px 0px 3px 5px;
+    color:#ffffff;
+    border-radius: 5px; 
+}
+.margin{
+    margin-top: 5px;
+}
+.p1{
+    position: relative;
+    display:inline;
+}
+
+.p2{
+display:inline;
+    position: absolute;
+    right:30px
+  
+}
+

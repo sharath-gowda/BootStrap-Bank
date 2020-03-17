@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Acme|Literata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger" style="color: #ffffff; ">
+    <a href=""><img src="logo1.jpg"></a>
+    <a href="" class="navbar-brand">Welcome to ABC Bank</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" ><a href="" class="nav-link">Personal</a></li>
+      <li class="nav-item"> <a href="" class="nav-link">Business</a></li>
+      <li class="nav-item"><a href="" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="" class="nav-link">Forms</a></li>
+      <a name="" id="" class="btn btn-danger " href="#" role="button">Login</a>
+    </ul>
+  </nav>
+  <center>
+    <div class="container">
+      <center>
+          <h1>Available Balance</h1>
+          <h2 id="balance">+000000</h2>
+      </center>
+  </div>
+</div>
+
+<div>
+  <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+          <div class="deposit">
+              <p class="p1">Deposit</p>
+              <p class="p2" id="dep">+00000</p>
+          </div>
+      </div>
+  </div>
+</div>
+<br>
+<div>
+  <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+          <div class="deposit">
+              <p class="p1">withdraw</p>
+              <p class="p2" id="with">+00000</p>
+          </div>
+      </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+          <div class="row">
+              <div class="col-6">
+                 <p> Account Number :</p>
+              </div>
+              <div class="col-6">
+                  <input class="form-control" type="text" name="" placeholder="xxxxxxxxxx" id="accno">
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col-6"  >
+                 <p> Account Holdername :</p>
+              </div>
+              <div class="col-6">
+                  <input class="form-control" type="text" name="" placeholder="Enter The Name" id="accname">
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col-6" >
+                 <p> CRN:</p>
+              </div>
+              <div class="col-6">
+                  <input class="form-control" type="text" name="" placeholder="xxxxxxxxxx" id="crn">
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
+  <center>
+      <div class="row">
+          <div class="col-2"></div>
+          <div class="col-9">
+              <div class="row">
+                  <div class="col-3">
+                      <div class="input-group mb-3">
+                          <select class="custom-select" id="choose" name="options">
+                              <option selected>Choose...</option>
+                              <option value="1">Deposit</option>
+                              <option value="2">Withdraw</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="col-3">
+                      <input class="form-control" type="text" name="dcp" placeholder="Description" id="dcp">
+                  </div>
+                  <div class="col-3">
+                      <input class="form-control" type="text" name="amount" placeholder="Enter the Amount" id="amount">
+                  </div>
+                  <div class="col-3">
+                      <button class="btn btn-outline-danger" type="submit" id="btn">Submit</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </center>
+ <div class="row">
+     <div class="col-4">
+         <div class="alert alert-danger" role="alert" id="alert1">
+            <h6 id="ans"></h6>
+         </div>
+        
+     </div>
+     <div class="col-4">
+         <div class="alert alert-danger" role="alert" id="alert2">
+            <h6 id="ans1"></h6>
+         </div>
+       
+    </div>
+    <div class="col-4">
+        <div class="alert alert-danger" role="alert" id="alert3">
+            <h6 id="ans2"></h6> 
+        </div>
+      
+    </div>
+ </div>
+  <div class="row">
+      <div class="col-6">
+          <div class="alert alert-success" role="alert">
+              <h5>Deposit Log</h5>
+              <div class="row">
+                  <div class="col-4">Date</div>
+                  <div class="col-4">Description</div>
+                  <div class="col-4">Amount</div>
+              </div>
+              <h5 id="res1"></h5>
+          </div>
+      </div>
+      <div class="col-6">
+          <div class="alert alert-success" role="alert">
+              <h5>Withdrawal Log</h5>
+              <div class="row">
+                  <div class="col-4">Date</div>
+                  <div class="col-4">Description</div>
+                  <div class="col-4">Amount</div>
+              </div>
+              <h5 id="res2"></h5>
+          </div>
+      </div>
+  </div>
+
+
+</div>
+
+
+
+</center>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="bank.js"></script>  
+</body>
+</html>
